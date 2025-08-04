@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1><i class="fas fa-code"></i> Interactive Experience</h1>
+      <button id="mode-toggle" class="mode-toggle-btn"><i class="fas fa-moon"></i> Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="button-section card-like">
+      <h2><i class="fas fa-magic"></i> Shape Animation</h2>
+      <button id="animateBtn">Click to Animate Box</button>
+      <div class="box" id="box"></div>
+    </section>
+
+    <section class="calculator-section card-like">
+      <h2><i class="fas fa-calculator"></i> Basic Calculator</h2>
+      <div class="input-group">
+        <input type="number" id="num1" placeholder="First number">
+        <input type="number" id="num2" placeholder="Second number">
+      </div>
+      <div class="calculator-buttons">
+        <button id="addBtn">Add</button>
+        <button id="subtractBtn">Subtract</button>
+        <button id="multiplyBtn">Multiply</button>
+        <button id="divideBtn">Divide</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+    <section class="card-section card-like">
+      <h2><i class="fas fa-exchange-alt"></i> Card Flip</h2>
+      <div class="card-wrapper">
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">Hover or Click Me</div>
+            <div class="card-back">🎉 Surprise!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
